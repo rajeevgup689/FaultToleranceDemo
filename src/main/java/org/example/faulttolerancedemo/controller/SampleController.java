@@ -6,15 +6,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SampleController
-{
+public class SampleController {
     @Autowired
     private ThirdPartyService thirdPartyService;
 
-     @GetMapping("/call")
-    public String testCall(){
+    @GetMapping("/call")
+    public String testCall() {
 
-    return thirdPartyService.callThirdPartyAPI();
-     }
+        return thirdPartyService.callThirdPartyAPI();
+    }
 
 }
